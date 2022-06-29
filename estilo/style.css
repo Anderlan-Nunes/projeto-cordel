@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; /* tamanho minimo da altura da minha viwporte vai ser 100%*/
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; tudo maisculo*/
+    font-variant: small-caps; /*tudo maisculo mas com a letra no comeco da palavra maior*/
+}
+/*deixar cabecalho simetrio 50 para cima e 50 pra baixo*/
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    background-color: white;
+    text-decoration: none; /*tira o subliado do link*/
+    font-weight: bolder; /*negrito*/
+}
+
+header a:hover, footer a:hover {
+    /*passando mouse em cima*/
+    text-decoration: underline; /*deixar subliado*/
+}
+
+section {
+    /* para fazer o efeira parallax cola um espaco de 10 por cento de altura da tela em cima e em baixo esse espco da view vh faz com que quando diminui o tamanha da tela o projete se adpta*/
+    padding-top: 10vh; 
+    padding-bottom: 10vh;
+    line-height: 2em; /*espacamento duplu entre as frases*/
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagen {
+    background-color: rgb(73, 73, 73);
+    color: white;
+}
+
+section.imagen > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
